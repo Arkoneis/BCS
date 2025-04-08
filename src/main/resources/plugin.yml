@@ -1,5 +1,5 @@
 name: BCS
-version: 3.5
+version: 3.6
 main: ru.gatabarr.bcs.Bcs
 api-version: 1.16
 description: Плагин для создания структур из блоков с выполнением команд
@@ -8,8 +8,13 @@ author: Gatabarr
 commands:
   bcs:
     description: Основная команда плагина BCS
-    usage: /bcs <reload|check|rotate|debug>
-    permission: bcs.use
+    usage: |
+      /bcs reload - Перезагрузить структуры
+      /bcs check - Проверить структуры
+      /bcs rotate <name> - Создать повернутые копии структуры
+      /bcs debug - Включить режим отладки
+      /bcs structure create <name> - Создать новую структуру
+      /bcs info - Информация о плагине
 
 permissions:
   bcs.use:
@@ -26,4 +31,10 @@ permissions:
     default: op
   bcs.debug:
     description: Режим отладки
+    default: op
+  bcs.position:
+    description: Использование золотой лопаты для выделения
+    default: op
+  bcs.create:
+    description: Создание новых структур
     default: op
