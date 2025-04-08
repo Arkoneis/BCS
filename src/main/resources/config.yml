@@ -1,17 +1,9 @@
-# Настройки плагина BCS
 settings:
-  # Разрешить создание структур только в определенных мирах
+  gold-shovel: GOLDEN_SHOVEL
   allowed-worlds:
     - world
     - world_nether
     - world_the_end
-
-  # Сообщения
-  messages:
-    no-permission: "&cУ вас нет прав на использование этой команды!"
-    structure-activated: "&aСтруктура активирована!"
-
-  # Логирование
   logging:
-    debug: false
     save-to-file: true
+    log-folder: structure_logs
