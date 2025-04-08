@@ -1,0 +1,25 @@
+# Блок, активирующий проверку структуры
+trigger: STONE_BUTTON
+
+# Команды для выполнения
+commands:
+  - say %player% активировал структуру!
+  - give %player% diamond 1
+
+# Блоки структуры (относительно триггерного блока)
+blocks:
+  button:
+    dx: 0
+    dy: 0
+    dz: 0
+    material: STONE_BUTTON
+  stone:
+    dx: 0
+    dy: 1
+    dz: 0
+    material: STONE
+  gold:
+    dx: 0
+    dy: 2
+    dz: 0
+    material: GOLD_BLOCK
